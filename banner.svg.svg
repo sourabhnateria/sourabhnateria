@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 740" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes scan { 0% { transform: translateY(-740px); } 100% { transform: translateY(740px); } }
+      @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.7; } }
+      @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+      .bg { fill: #0d1117; }
+      .terminal-text { font-family: 'Fira Code', monospace; fill: #ec4899; font-size: 16px; }
+      .cursor { animation: blink 1s infinite; fill: #ec4899; }
+      .neon-text { font-family: sans-serif; font-weight: bold; fill: #f472b6; filter: drop-shadow(0 0 8px #ec4899); }
+      .scan-line { animation: scan 3.5s linear infinite; }
+      .orb { animation: pulse 4s ease-in-out infinite; }
+      .floating { animation: float 3s ease-in-out infinite; }
+    </style>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <clipPath id="bannerClip">
+      <rect width="1280" height="740" rx="16" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#bannerClip)">
+    <rect class="bg" width="1280" height="740" rx="16" />
+    <circle class="orb" cx="200" cy="150" r="180" fill="#ec4899" opacity="0.2" filter="blur(40px)" />
+    <circle class="orb" cx="1000" cy="550" r="220" fill="#a855f7" opacity="0.2" filter="blur(50px)" />
+    
+    <rect x="50" y="40" width="1180" height="660" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <circle cx="80" cy="70" r="6" fill="#ff5f56"/>
+    <circle cx="100" cy="70" r="6" fill="#ffbd2e"/>
+    <circle cx="120" cy="70" r="6" fill="#27c93f"/>
+    
+    <text x="80" y="130" class="terminal-text">user@dev:~$ cat README.md</text>
+    <rect x="300" y="115" width="10" height="20" class="cursor" />
+    
+    <text x="80" y="210" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="52" fill="url(#pinkGrad)">SOURABH NATERIA</text>
+    <text x="80" y="260" font-family="'Fira Code', monospace" font-size="22" fill="#8b949e">&gt; FULLSTACK DEVELOPER | frontend &amp; backend</text>
+    
+    <g class="floating" transform="translate(80, 310)">
+      <rect x="0" y="0" width="100" height="36" rx="18" fill="#a855f7" opacity="0.2"/>
+      <text x="50" y="23" font-family="sans-serif" font-size="14" fill="#f472b6" text-anchor="middle">MERN</text>
+      
+      <rect x="115" y="0" width="100" height="36" rx="18" fill="#a855f7" opacity="0.2"/>
+      <text x="165" y="23" font-family="sans-serif" font-size="14" fill="#f472b6" text-anchor="middle">Next.js</text>
+      
+      <rect x="230" y="0" width="110" height="36" rx="18" fill="#a855f7" opacity="0.2"/>
+      <text x="285" y="23" font-family="sans-serif" font-size="14" fill="#f472b6" text-anchor="middle">TypeScript</text>
+      
+      <rect x="355" y="0" width="100" height="36" rx="18" fill="#a855f7" opacity="0.2"/>
+      <text x="405" y="23" font-family="sans-serif" font-size="14" fill="#f472b6" text-anchor="middle">Python</text>
+      
+      <rect x="470" y="0" width="100" height="36" rx="18" fill="#a855f7" opacity="0.2"/>
+      <text x="520" y="23" font-family="sans-serif" font-size="14" fill="#f472b6" text-anchor="middle">Gen-AI</text>
+    </g>
+
+    <rect x="80" y="380" width="550" height="220" rx="8" fill="#0d1117" stroke="#30363d"/>
+    <text x="100" y="420" font-family="monospace" font-size="14" fill="#d2a8ff">const <tspan fill="#79c0ff">buildDreams</tspan> = () =&gt; {</text>
+    <text x="120" y="450" font-family="monospace" font-size="14" fill="#79c0ff">  code<tspan fill="#c9d1d9">()</tspan>;</text>
+    <text x="120" y="480" font-family="monospace" font-size="14" fill="#79c0ff">  learn<tspan fill="#c9d1d9">()</tspan>;</text>
+    <text x="120" y="510" font-family="monospace" font-size="14" fill="#79c0ff">  repeat<tspan fill="#c9d1d9">()</tspan>;</text>
+    <text x="100" y="540" font-family="monospace" font-size="14" fill="#d2a8ff">};</text>
+
+    <text x="80" y="650" class="neon-text" font-size="20">KEEP CODING KEEP GROWING</text>
+    
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#ec4899" stroke-width="3" class="scan-line" opacity="0.6"/>
+  </g>
+</svg>

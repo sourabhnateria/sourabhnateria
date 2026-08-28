@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <style>
+      @keyframes swing {
+        0% { transform: rotate(8deg); }
+        50% { transform: rotate(-8deg); }
+        100% { transform: rotate(8deg); }
+      }
+      .lanyard-group { transform-origin: 150px 0px; animation: swing 4s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g class="lanyard-group">
+    <path d="M 135 0 L 145 120 L 155 120 L 165 0" fill="#ec4899" />
+    <text x="150" y="60" fill="#ffffff" font-size="8" font-family="sans-serif" text-anchor="middle" transform="rotate(90 150 60)">DEVELOPER</text>
+    <circle cx="150" cy="125" r="8" fill="none" stroke="#94a3b8" stroke-width="3" />
+    <rect x="142" y="133" width="16" height="15" rx="2" fill="#cbd5e1" />
+    <rect x="75" y="148" width="150" height="220" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="205" r="35" fill="#0f172a" stroke="#ec4899" stroke-width="2" />
+    <text x="150" y="210" fill="#f472b6" font-size="24" text-anchor="middle">SN</text>
+    <text x="150" y="260" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">SOURABH NATERIA</text>
+    <text x="150" y="275" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">Fullstack Developer</text>
+    <text x="150" y="290" fill="#ec4899" font-size="9" font-family="monospace" text-anchor="middle">@sourabhnateria</text>
+    <rect x="95" y="320" width="110" height="25" fill="#ffffff" rx="2" />
+    <path d="M 100 323 v 19 M 105 323 v 19 M 108 323 v 19 M 115 323 v 19 M 120 323 v 19 M 128 323 v 19 M 135 323 v 19 M 142 323 v 19 M 150 323 v 19 M 160 323 v 19 M 170 323 v 19 M 180 323 v 19 M 190 323 v 19" stroke="#000000" stroke-width="2" />
+  </g>
+</svg>

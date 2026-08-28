@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap');
+    .bg { fill: #0d1117; rx: 8; stroke: #30363d; }
+    .title { fill: #c9d1d9; font-family: 'Inter', sans-serif; font-weight: bold; font-size: 16px; }
+    .text { fill: #8b949e; font-family: 'Inter', sans-serif; font-size: 14px; }
+    .val { fill: #58a6ff; font-family: 'Inter', sans-serif; font-weight: bold; font-size: 14px; }
+    .ring-bg { fill: none; stroke: #21262d; stroke-width: 8; }
+    .ring { fill: none; stroke: #ff007f; stroke-width: 8; stroke-linecap: round; stroke-dasharray: 251; stroke-dashoffset: 251; animation: load 2s forwards ease-out; }
+    .rank { fill: #ff007f; font-family: 'Inter', sans-serif; font-weight: bold; font-size: 24px; text-anchor: middle; }
+    @keyframes load { to { stroke-dashoffset: 60; } }
+    @keyframes slide { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
+    .row { animation: slide 0.5s forwards ease-out; opacity: 0; }
+  </style>
+  <rect class="bg" width="100%" height="100%" />
+  <text x="25" y="35" class="title">⚡ GitHub Stats</text>
+  
+  <g transform="translate(300, 100)">
+    <circle cx="0" cy="0" r="40" class="ring-bg" />
+    <circle cx="0" cy="0" r="40" class="ring" transform="rotate(-90)" />
+    <text x="0" y="8" class="rank">S</text>
+  </g>
+
+  <g transform="translate(25, 70)">
+    <g class="row" style="animation-delay: 0.2s"><text class="text" y="0">Total Stars:</text><text class="val" x="120" y="0">124</text></g>
+    <g class="row" style="animation-delay: 0.4s"><text class="text" y="25">Total Commits:</text><text class="val" x="120" y="25">1,024</text></g>
+    <g class="row" style="animation-delay: 0.6s"><text class="text" y="50">Total PRs:</text><text class="val" x="120" y="50">42</text></g>
+    <g class="row" style="animation-delay: 0.8s"><text class="text" y="75">Total Issues:</text><text class="val" x="120" y="75">18</text></g>
+  </g>
+</svg>

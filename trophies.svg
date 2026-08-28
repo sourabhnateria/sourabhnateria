@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap');
+      .bg { fill: #0d1117; rx: 8; stroke: #30363d; }
+      .title { fill: #c9d1d9; font-family: 'Inter', sans-serif; font-weight: bold; font-size: 16px; }
+      .trophy-bg { fill: #161b22; rx: 6; stroke: #30363d; }
+      .trophy-title { fill: #8b949e; font-family: 'Inter', sans-serif; font-size: 10px; text-anchor: middle; }
+      .icon { font-size: 30px; text-anchor: middle; }
+      .pop { opacity: 0; animation: popIn 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      @keyframes popIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+      .shine { fill: rgba(255,255,255,0.1); animation: sweep 3s infinite; }
+      @keyframes sweep { 0% { transform: translateX(-50px) skewX(-20deg); } 100% { transform: translateX(150px) skewX(-20deg); } }
+    </style>
+    <clipPath id="cell-clip"><rect width="80" height="90" rx="6"/></clipPath>
+  </defs>
+  <rect class="bg" width="100%" height="100%" />
+  <text x="25" y="35" class="title">🏆 GitHub Trophies</text>
+  
+  <g transform="translate(25, 60)">
+    <g class="pop" style="animation-delay: 0.1s" transform-origin="40 45">
+      <rect class="trophy-bg" width="80" height="90" />
+      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
+      <text class="icon" x="40" y="55">🌟</text>
+      <text class="trophy-title" x="40" y="75">Stars</text>
+    </g>
+    <g class="pop" style="animation-delay: 0.3s" transform="translate(90, 0)" transform-origin="40 45">
+      <rect class="trophy-bg" width="80" height="90" />
+      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
+      <text class="icon" x="40" y="55">🔨</text>
+      <text class="trophy-title" x="40" y="75">Commits</text>
+    </g>
+    <g class="pop" style="animation-delay: 0.5s" transform="translate(180, 0)" transform-origin="40 45">
+      <rect class="trophy-bg" width="80" height="90" />
+      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
+      <text class="icon" x="40" y="55">🚀</text>
+      <text class="trophy-title" x="40" y="75">Issues</text>
+    </g>
+    <g class="pop" style="animation-delay: 0.7s" transform="translate(270, 0)" transform-origin="40 45">
+      <rect class="trophy-bg" width="80" height="90" />
+      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
+      <text class="icon" x="40" y="55">🔀</text>
+      <text class="trophy-title" x="40" y="75">PRs</text>
+    </g>
+  </g>
+</svg>
