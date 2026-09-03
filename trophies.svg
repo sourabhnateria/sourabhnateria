@@ -1,46 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap');
-      .bg { fill: #0d1117; rx: 8; stroke: #30363d; }
-      .title { fill: #c9d1d9; font-family: 'Inter', sans-serif; font-weight: bold; font-size: 16px; }
-      .trophy-bg { fill: #161b22; rx: 6; stroke: #30363d; }
-      .trophy-title { fill: #8b949e; font-family: 'Inter', sans-serif; font-size: 10px; text-anchor: middle; }
-      .icon { font-size: 30px; text-anchor: middle; }
-      .pop { opacity: 0; animation: popIn 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-      @keyframes popIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
-      .shine { fill: rgba(255,255,255,0.1); animation: sweep 3s infinite; }
-      @keyframes sweep { 0% { transform: translateX(-50px) skewX(-20deg); } 100% { transform: translateX(150px) skewX(-20deg); } }
-    </style>
-    <clipPath id="cell-clip"><rect width="80" height="90" rx="6"/></clipPath>
-  </defs>
-  <rect class="bg" width="100%" height="100%" />
-  <text x="25" y="35" class="title">🏆 GitHub Trophies</text>
-  
-  <g transform="translate(25, 60)">
-    <g class="pop" style="animation-delay: 0.1s" transform-origin="40 45">
-      <rect class="trophy-bg" width="80" height="90" />
-      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
-      <text class="icon" x="40" y="55">🌟</text>
-      <text class="trophy-title" x="40" y="75">Stars</text>
-    </g>
-    <g class="pop" style="animation-delay: 0.3s" transform="translate(90, 0)" transform-origin="40 45">
-      <rect class="trophy-bg" width="80" height="90" />
-      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
-      <text class="icon" x="40" y="55">🔨</text>
-      <text class="trophy-title" x="40" y="75">Commits</text>
-    </g>
-    <g class="pop" style="animation-delay: 0.5s" transform="translate(180, 0)" transform-origin="40 45">
-      <rect class="trophy-bg" width="80" height="90" />
-      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
-      <text class="icon" x="40" y="55">🚀</text>
-      <text class="trophy-title" x="40" y="75">Issues</text>
-    </g>
-    <g class="pop" style="animation-delay: 0.7s" transform="translate(270, 0)" transform-origin="40 45">
-      <rect class="trophy-bg" width="80" height="90" />
-      <rect width="20" height="90" class="shine" clip-path="url(#cell-clip)" />
-      <text class="icon" x="40" y="55">🔀</text>
-      <text class="trophy-title" x="40" y="75">PRs</text>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="250" viewBox="0 0 520 250">
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#13071f"/><stop offset="1" stop-color="#2a0b3b"/></linearGradient><linearGradient id="shine"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<style><![CDATA[.cell{opacity:0;animation:pop .55s cubic-bezier(.2,.9,.2,1) forwards}.q1{animation-delay:.2s}.q2{animation-delay:.35s}.q3{animation-delay:.5s}.q4{animation-delay:.65s}.q5{animation-delay:.8s}.q6{animation-delay:.95s}@keyframes pop{from{opacity:0;transform:scale(.65)}to{opacity:1;transform:scale(1)}}.shine{animation:sweep 3.2s ease-in-out 1.2s infinite}@keyframes sweep{from{transform:translateX(-550px)}to{transform:translateX(550px)}}]]></style>
+<rect x="3" y="3" width="514" height="244" rx="24" fill="url(#b)" stroke="#ff4fb9"/><text x="24" y="34" fill="#fff" font-family="Arial" font-size="16" font-weight="800">Developer Trophies</text>
+<g class="cell q1"><rect x="22" y="55" width="150" height="72" rx="15" fill="#1a0c29" stroke="#ff4fb9"/><text x="97" y="88" text-anchor="middle" font-size="28">🏆</text><text x="97" y="110" text-anchor="middle" fill="#ffd166" font-family="Arial" font-size="11">CODE CREATOR</text></g>
+<g class="cell q2"><rect x="185" y="55" width="150" height="72" rx="15" fill="#1a0c29" stroke="#8b5cf6"/><text x="260" y="88" text-anchor="middle" font-size="28">🚀</text><text x="260" y="110" text-anchor="middle" fill="#c084fc" font-family="Arial" font-size="11">SHIP IT</text></g>
+<g class="cell q3"><rect x="348" y="55" width="150" height="72" rx="15" fill="#1a0c29" stroke="#ff4fb9"/><text x="423" y="88" text-anchor="middle" font-size="28">⭐</text><text x="423" y="110" text-anchor="middle" fill="#ffd166" font-family="Arial" font-size="11">STAR STRUCK</text></g>
+<g class="cell q4"><rect x="22" y="143" width="150" height="72" rx="15" fill="#1a0c29" stroke="#8b5cf6"/><text x="97" y="176" text-anchor="middle" font-size="28">💡</text><text x="97" y="198" text-anchor="middle" fill="#c084fc" font-family="Arial" font-size="11">IDEA MAKER</text></g>
+<g class="cell q5"><rect x="185" y="143" width="150" height="72" rx="15" fill="#1a0c29" stroke="#ff4fb9"/><text x="260" y="176" text-anchor="middle" font-size="28">🧠</text><text x="260" y="198" text-anchor="middle" fill="#ffd166" font-family="Arial" font-size="11">LEARN LOOP</text></g>
+<g class="cell q6"><rect x="348" y="143" width="150" height="72" rx="15" fill="#1a0c29" stroke="#8b5cf6"/><text x="423" y="176" text-anchor="middle" font-size="28">💜</text><text x="423" y="198" text-anchor="middle" fill="#c084fc" font-family="Arial" font-size="11">KEEP GROWING</text></g>
+<rect class="shine" x="0" y="40" width="90" height="180" fill="url(#shine)" transform="skewX(-18)" opacity=".5"/></svg>
